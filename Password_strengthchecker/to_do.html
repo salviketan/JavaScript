@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/to_do_style.css">
+    <title>TO-DO</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <div id = "the-header" class="the-header">
+        <h1> This is To-do app</h1>
+           <!--d-flex taskcreater-bar-->
+          <input id ="the-input" type="text" placeholder="Create Task">
+          <span id = "button" class="create-button">Create</span>
+          <p id= "empty-bar"></p>
+      </div>
+      <div class="flex-box-container-2">
+        <div class= "container-row-1" >
+          <h3>Remaining task :<p id = "remainbox-para"></p></h3>
+            <ul id= "the-ul">
+
+            </ul>
+        </div>
+        <br>
+        <div class= "container-row-2">
+          <h3>Completed task : <p id = "completebox-para"></p></h3>
+            <ul id= "complete-ul">
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <script src="static\Js\to_do_app.js"></script>
+  </body>
+</html>
