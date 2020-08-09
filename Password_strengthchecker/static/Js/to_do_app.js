@@ -8,13 +8,13 @@ function createNewTag(){
     // console.log(createdTask);
 
     if(createdTask == ""){
-        document.querySelector("#empty-bar").innerHTML = "Create Task field can not be empty." 
+        document.querySelector("#empty-bar").innerHTML = "Create Task field can not be empty."
     }else{
         let li = document.createElement("li");
         let srNo = document.getElementsByTagName("li");
         console.log(srNo.length);
         li.innerHTML = (srNo.length +1) + ".  " +createdTask;
-        
+
         let buttonTag = document.createElement("button");
         buttonTag.setAttribute("class", "close");
         buttonTag.setAttribute("id", "remove")
@@ -28,11 +28,11 @@ function createNewTag(){
         document.querySelector("#empty-bar").innerHTML = '';
     }
     document.querySelector("#the-input").value = '';
-    
+
 }
 
 function removeButton(buttonTag){
-    
+
     let completedli = buttonTag.parentElement;
     // completeBtnText = buttonTag.parentElement.textContent;
 
@@ -50,13 +50,12 @@ function removeButton(buttonTag){
 
 function completeRemoveButton(completeButton){
     completeButton.parentElement.remove();
-    
+
 }
 
 // let emptyRemainUl = document.querySelector("#the-ul").innerHTML;
 // let emptyCompleteUl = document.querySelector("#complete-ul").innerHTML
 
 // if(emptyRemainUl === ""){
-//     document.querySelector("#remainbox-para").innerHTML = "No task to complete." 
+//     document.querySelector("#remainbox-para").innerHTML = "No task to complete."
 // }
-
